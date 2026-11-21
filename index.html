@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Snake</h1>
+
+  <div class="modes">
+    <button data-d="easy">Easy</button>
+    <button data-d="medium">Medium</button>
+    <button data-d="hard">Hard</button>
+  </div>
+
+  <p class="stats">
+    Score: <span id="score">0</span> |
+    Level: <span id="level">1</span> |
+    Best: <span id="best">0</span><br>
+    Mode: <span id="mode">Medium</span> |
+    Effect: <span id="effect">none</span>
+  </p>
+
+  <canvas id="board" width="600" height="600"></canvas>
+
+  <div class="dpad">
+    <button class="up" data-dir="up">▲</button>
+    <button class="left" data-dir="left">◀</button>
+    <button class="right" data-dir="right">▶</button>
+    <button class="down" data-dir="down">▼</button>
+  </div>
+
+  <div class="actions">
+    <button id="restartBtn">Restart</button>
+    <button id="muteBtn">Sound: On</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
